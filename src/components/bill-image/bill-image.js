@@ -5,7 +5,7 @@ class BillImage extends Component {
 
     render() {
         return (
-            <section className="bill-image-panel">
+            <section className="l-bill-image-panel">
             <img src="https://via.placeholder.com/300" className="img-fluid w-100"></img>
             </section>
         );
