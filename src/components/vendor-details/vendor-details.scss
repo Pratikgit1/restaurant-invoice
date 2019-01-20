@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.l-labels {
+    color: $color-lightgrey;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.l-vendor-mapping {
+    font-size: 12px;
+    color: $color-green;
+}
+
+.fa-envelope {
+    font-size: 11px !important;
+}
+
+.direct-wrapper {
+    border: 1px solid $color-lightgrey;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

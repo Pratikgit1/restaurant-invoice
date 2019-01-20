@@ -1,0 +1,54 @@
+$color-blue: #34444e;
+$color-lightgrey: #cacaca;
+$color-green: #37d285;
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #31393f;
+  padding: 0;
+  margin: 0;
+}
+
+.g-flex {
+  display: flex;
+}
+
+.g-cursor-pointer {
+  cursor: pointer;
+}
+
+.g-h-100vh {
+  height: 100vh;
+}
+
+.g-fs-24 {
+  font-size: 24px !important;
+}
+
+.g-fs-21 {
+  font-size: 21px !important;
+}
+
+.g-fs-18 {
+  font-size: 18px !important;
+}
+
+.g-fs-16 {
+  font-size: 16px !important;
+}
+
+.g-fs-10 {
+  font-size: 10px !important;
+}
+
+.g-fs-12 {
+  font-size: 12px !important;
+}
+
+.g-fs-14 {
+  font-size: 14px !important;
+}
+
+.g-fs-11 {
+  font-size: 11px !important;
+}

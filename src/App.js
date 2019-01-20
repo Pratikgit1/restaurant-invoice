@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import BillImage from "./components/bill-image/bill-image";
+import VendorDetails from "./components/vendor-details/vendor-details";
+import LineItems from "./components/line-items/line-items";
+import HistoryItems from "./components/history-items/history-items";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container-fluid">
+        <div className="row l-max-height">
+          <div className="col-6 g-h-100vh m-0 p-0">
+            <BillImage></BillImage>
+          </div>
+          <div className="col-6">
+            <VendorDetails></VendorDetails>
+          </div>
+        </div>
       </div>
     );
   }
