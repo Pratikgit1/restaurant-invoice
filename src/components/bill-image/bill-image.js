@@ -6,7 +6,7 @@ class BillImage extends Component {
     render() {
         return (
             <section className="l-bill-image-panel">
-            <img src="https://via.placeholder.com/300" className="img-fluid w-100"></img>
+            <img src="http://www.teamlogic.info/wp-content/uploads/commision-invoice-mmk-how-to-separate-agency-commission-from-the-invoice.png" className="img-fluid w-100"></img>
             </section>
         );
     }
