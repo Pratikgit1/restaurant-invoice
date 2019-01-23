@@ -41,3 +41,18 @@
     font-size: 13px;
     margin-top: 7px;
 }
+
+.l-more-btn {
+    border-radius: 0;
+    border: 1px solid $color-lightgrey;
+}
+
+.l-approve-btn {
+    border-radius: 0;
+}
+
+.l-actions {
+    float: right !important;
+    position: absolute;
+    right: 0;
+}

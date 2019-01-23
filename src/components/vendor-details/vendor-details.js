@@ -13,6 +13,14 @@ class VendorDetails extends Component {
                 aria-hidden="true"
               />
               <span className="l-labels">Direct</span>
+              <div className="l-actions">
+                <div className="btn l-more-btn mr-2 g-cursor-pointer">
+                  More
+                </div>
+                <div className="btn btn-info l-approve-btn g-cursor-pointer">
+                  Approve
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-12 mt-3">
