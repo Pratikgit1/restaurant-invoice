@@ -1,58 +1,63 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 .l-vendor-details-panel {
-    padding: 25px 15px;
+  padding: 25px 15px;
 }
 
 .l-labels {
-    color: $color-lightgrey;
-    font-size: 8px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
+  color: $color-lightgrey;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .l-vendor-mapping {
-    font-size: 12px;
-    color: $color-green;
+  font-size: 12px;
+  color: $color-green;
 }
 
 .fa-envelope {
-    font-size: 11px !important;
+  font-size: 11px !important;
 }
 
 .l-direct-wrapper {
-    border: 1px solid $color-lightgrey;
-    padding: 7px;
-    border-radius: 50px;
-    width: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid $color-lightgrey;
+  padding: 7px;
+  border-radius: 50px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-chevron-circle-up {
-    font-size: 21px;
-    margin-left: 9px;
-    color: #888;
+  font-size: 21px;
+  margin-left: 9px;
+  color: #888;
 }
 
 .l-bill-data-dark {
-    font-size: 13px;
-    margin-top: 7px;
+  font-size: 13px;
+  margin-top: 7px;
+  font-weight: bold;
 }
 
 .l-more-btn {
-    border-radius: 0;
-    border: 1px solid $color-lightgrey;
+  border-radius: 3px;
+  border: 1px solid $color-lightgrey;
 }
 
 .l-approve-btn {
-    border-radius: 0;
+  border-radius: 3px;
 }
 
 .l-actions {
-    float: right !important;
-    position: absolute;
-    right: 0;
+  float: right !important;
+  position: absolute;
+  right: 0;
+}
+
+.l-memo {
+  width: 95%;
 }

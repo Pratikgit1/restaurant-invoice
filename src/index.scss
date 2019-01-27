@@ -3,7 +3,7 @@ $color-lightgrey: #cacaca;
 $color-green: #37d285;
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #31393f;
   padding: 0;
   margin: 0;
@@ -51,4 +51,18 @@ body {
 
 .g-fs-11 {
   font-size: 11px !important;
+}
+
+.g-border-none {
+  border: none;
+}
+
+.g-outline-none {
+  outline: none;
+}
+
+.ui.segment.active.tab {
+  padding: 0;
+  border: none !important;
+  box-shadow: none;
 }

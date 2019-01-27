@@ -1,8 +1,30 @@
 import React, { Component } from "react";
 import "./vendor-details.scss";
+import { Tab } from "semantic-ui-react";
+import LineItems from "../line-items/line-items";
+import HistoryItems from "../history-items/history-items";
 
 class VendorDetails extends Component {
   render() {
+    const panes = [
+      {
+        menuItem: "Line Items",
+        render: () => (
+          <Tab.Pane attached={false}>
+            <LineItems />
+          </Tab.Pane>
+        )
+      },
+      {
+        menuItem: "History",
+        render: () => (
+          <Tab.Pane attached={false}>
+            <HistoryItems />
+          </Tab.Pane>
+        )
+      }
+    ];
+
     return (
       <section className="l-vendor-details-panel">
         <div className="row">
@@ -14,10 +36,10 @@ class VendorDetails extends Component {
               />
               <span className="l-labels">Direct</span>
               <div className="l-actions">
-                <div className="btn l-more-btn mr-2 g-cursor-pointer">
+                <div className="btn l-more-btn mr-2 g-cursor-pointer g-fs-14">
                   More
                 </div>
-                <div className="btn btn-info l-approve-btn g-cursor-pointer">
+                <div className="btn btn-info l-approve-btn g-cursor-pointer g-fs-14">
                   Approve
                 </div>
               </div>
@@ -75,14 +97,21 @@ class VendorDetails extends Component {
           </div>
         </div>
 
-        <div className="row mt-3">
-          <div className="col-6 p-0">
-            <span className="text-muted g-fs-12">
-              <i className="fa fa-comment-o mr-3" aria-hidden="true" />
-              Click here to enter Memo
-            </span>
+        <div className="row mt-5">
+          <div className="col-12 text-muted g-fs-12">
+            <i className="fa fa-comment-o mr-3" aria-hidden="true" />
+            <input
+              type="text"
+              placeholder="Click here to enter Memo"
+              className="g-border-none g-outline-none l-memo"
+            />
           </div>
         </div>
+        <Tab
+          menu={{ secondary: true, pointing: true }}
+          panes={panes}
+          className="mt-3"
+        />
       </section>
     );
   }
