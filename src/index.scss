@@ -62,7 +62,9 @@ body {
 }
 
 .ui.segment.active.tab {
-  padding: 0;
-  border: none !important;
-  box-shadow: none;
+  height: 100vh;
+  background: #f9f9f9;
+  margin-top: -15px;
+  padding-top: 15px;
+  padding: 15px 30px;
 }
