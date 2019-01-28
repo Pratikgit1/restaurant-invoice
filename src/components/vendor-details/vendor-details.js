@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./vendor-details.scss";
-import { Tab } from "semantic-ui-react";
+import { Tab, Popup } from "semantic-ui-react";
 import LineItems from "../line-items/line-items";
 import HistoryItems from "../history-items/history-items";
 
@@ -29,6 +29,7 @@ class VendorDetails extends Component {
       }
     ];
 
+    // to control the toggle of expanded and collapsed section of the vendor details
     const toggleExpandCollapse = () => {
       this.setState({
         isVendorDetailsExpanded: !this.state.isVendorDetailsExpanded
@@ -72,11 +73,20 @@ class VendorDetails extends Component {
             <p className="l-bill-data-dark">Monty's Cheese Shop</p>
           </div>
           <div className="col-3">
-            <span className="l-labels">subtotal</span>
+            <div className="col-12 p-0">
+              <span className="l-labels">subtotal</span>
+              <span className="text-muted g-fs-12 float-right mt-0">
+                $1300.00
+              </span>
+            </div>
+            <div className="col-12 p-0 mt-1">
+              <span className="l-labels">tax</span>
+              <span className="float-right g-fs-12 text-muted">$29.36</span>
+            </div>
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-4">
           <div className="col-3">
             <span className="l-labels">posting date</span>
             <p className="l-bill-data-dark">July 14, 2017</p>
@@ -90,7 +100,12 @@ class VendorDetails extends Component {
             <p className="l-bill-data-dark">Sep 09, 2017</p>
           </div>
           <div className="col-3">
-            <span className="l-labels">total</span>
+            <div className="col-12 p-0">
+              <span className="l-labels">total</span>
+              <span className="l-bill-data-dark float-right mt-0">
+                $10000.00
+              </span>
+            </div>
           </div>
         </div>
 
@@ -124,16 +139,23 @@ class VendorDetails extends Component {
 
         <div className="row mt-3">
           <div className="col-2">
-            <p className="l-bill-data-dark">00003526</p>
+            <p className="l-bill-data-dark mt-0">00003526</p>
           </div>
           <div className="col-2">
-            <p className="l-bill-data-dark">July 09, 2017</p>
+            <p className="l-bill-data-dark mt-0">July 09, 2017</p>
           </div>
           <div className="col-3">
-            <p className="l-bill-data-dark">Monty's Cheese Shop</p>
+            <p className="l-bill-data-dark mt-0">Monty's Cheese Shop</p>
           </div>
           <div className="col-5">
             <p className="text-muted">Loreum Ipsum...</p>
+          </div>
+        </div>
+
+        <div className="row text-right mt-3">
+          <div className="col-12">
+            <span className="l-labels mr-5">total</span>
+            <span className="l-bill-data-dark float-right mt-0">$10000.00</span>
           </div>
         </div>
       </React.Fragment>
@@ -147,6 +169,32 @@ class VendorDetails extends Component {
       vendorDetailsSection = collapsedSection;
     }
 
+    const popUpHTML = (
+      <React.Fragment>
+        <section className="l-popup-section">
+          <div className="g-cursor-pointer l-popup-item">Export</div>
+          <div className="g-cursor-pointer l-popup-item">Mark as exported</div>
+        </section>
+        <section className="g-cursor-pointer l-popup-item l-popup-section">
+          Set up vendor
+        </section>
+        <section className="l-popup-section">
+          <div className="g-cursor-pointer l-popup-item">
+            Flag invoice
+            <i class="fa fa-flag ml-5 float-right" aria-hidden="true" />
+          </div>
+          <div className="g-cursor-pointer l-popup-item">
+            Archive invoice
+            <i class="fa fa-archive ml-5 float-right" aria-hidden="true" />
+          </div>
+          <div className="g-cursor-pointer text-danger l-popup-item">
+            Delete invoice
+            <i class="fa fa-trash ml-5 float-right" aria-hidden="true" />
+          </div>
+        </section>
+      </React.Fragment>
+    );
+
     return (
       <section className="l-vendor-details-panel">
         <div className="row">
@@ -158,9 +206,16 @@ class VendorDetails extends Component {
               />
               <span className="l-labels">Direct</span>
               <div className="l-actions">
-                <div className="btn l-more-btn mr-2 g-cursor-pointer g-fs-14">
-                  More
-                </div>
+                <Popup
+                  trigger={
+                    <div className="btn l-more-btn mr-2 g-cursor-pointer g-fs-14">
+                      More
+                    </div>
+                  }
+                  content={popUpHTML}
+                  className="p-0"
+                />
+
                 <div className="btn btn-info l-approve-btn g-cursor-pointer g-fs-14">
                   Approve
                 </div>

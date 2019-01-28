@@ -1,5 +1,23 @@
+@import "../../index.scss";
+
 .l-cards {
-  margin: 0;
-  border: 1px solid #d4d4d4;
-  padding: 15px 0;
+  border: 1px solid $color-lightgrey;
+  padding: 10px 0;
+  margin: 10px 0 !important;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.l-status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-labels {
+  color: $color-lightgrey;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
 }

@@ -62,9 +62,19 @@ body {
 }
 
 .ui.segment.active.tab {
-  height: 100vh;
+  height: -webkit-fill-available;
   background: #f9f9f9;
   margin-top: -15px;
   padding-top: 15px;
   padding: 15px 30px;
+  overflow: scroll;
+  padding-bottom: 350px;
+}
+
+.g-overflow-scroll {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

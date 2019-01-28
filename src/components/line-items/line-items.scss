@@ -1,0 +1,27 @@
+@import "../../index.scss";
+
+.l-align-th {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  &-qty-unit {
+    justify-content: center;
+  }
+  &-total {
+    justify-content: flex-end;
+  }
+}
+
+.l-rowData {
+  padding: 15px 0px;
+  border-bottom: 1px solid $color-lightgrey;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.l-rowHead {
+  border-bottom: 1px solid $color-lightgrey;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px 0px;
+}

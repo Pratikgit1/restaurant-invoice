@@ -2,76 +2,87 @@
 
 .l-vendor-details-panel {
   padding: 25px 15px;
+
+  .l-labels {
+    color: $color-lightgrey;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .l-vendor-mapping {
+    font-size: 12px;
+    color: $color-green;
+  }
+
+  .fa-envelope {
+    font-size: 11px !important;
+  }
+
+  .l-direct-wrapper {
+    border: 1px solid $color-lightgrey;
+    padding: 7px;
+    border-radius: 50px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fa-chevron-circle-up,
+  .fa-chevron-circle-down {
+    font-size: 21px;
+    margin-left: 9px;
+    color: #888;
+  }
+
+  .l-bill-data-dark {
+    font-size: 13px;
+    margin-top: 7px;
+    font-weight: bold;
+  }
+
+  .l-more-btn {
+    border-radius: 3px;
+    border: 1px solid $color-lightgrey;
+  }
+
+  .l-approve-btn {
+    border-radius: 3px;
+  }
+
+  .l-actions {
+    float: right !important;
+    position: absolute;
+    right: 0;
+  }
+
+  .l-memo {
+    width: 95%;
+  }
+
+  .l-tab-align {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .ui.secondary.pointing.menu > .item {
+    margin-left: 30px !important;
+  }
+
+  .ui.secondary.pointing.menu .item {
+    padding: 15px 5px !important;
+  }
 }
 
-.l-labels {
-  color: $color-lightgrey;
-  font-size: 8px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
+.l-popup-section {
+  border-bottom: 1px solid $color-lightgrey;
+  &:last-child {
+    border: none;
+  }
 }
 
-.l-vendor-mapping {
-  font-size: 12px;
-  color: $color-green;
-}
-
-.fa-envelope {
-  font-size: 11px !important;
-}
-
-.l-direct-wrapper {
-  border: 1px solid $color-lightgrey;
-  padding: 7px;
-  border-radius: 50px;
-  width: 85px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fa-chevron-circle-up,
-.fa-chevron-circle-down {
-  font-size: 21px;
-  margin-left: 9px;
-  color: #888;
-}
-
-.l-bill-data-dark {
-  font-size: 13px;
-  margin-top: 7px;
-  font-weight: bold;
-}
-
-.l-more-btn {
-  border-radius: 3px;
-  border: 1px solid $color-lightgrey;
-}
-
-.l-approve-btn {
-  border-radius: 3px;
-}
-
-.l-actions {
-  float: right !important;
-  position: absolute;
-  right: 0;
-}
-
-.l-memo {
-  width: 95%;
-}
-
-.l-tab-align {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-.ui.secondary.pointing.menu > .item {
-  margin-left: 30px !important;
-}
-
-.ui.secondary.pointing.menu .item {
-  padding: 15px 5px !important;
+.l-popup-item {
+  padding: 12px 15px;
 }
